@@ -1,0 +1,41 @@
+body {
+	font-family: Arial
+}
+.parent {
+	width: 600px;
+	height: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	box-sizing: border-box;
+	padding-top: 80px;
+	background-image: url(fon1.jpg);
+	background-size: 100%;
+	color: white
+}
+.parent h3 {
+	margin-left: 105px
+}
+.parent p {
+	margin-left: 105px
+}
+.box {
+	height: 60px;
+	width: 400px;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+button{
+	margin-left: 100px;
+	height: 40px;
+	width: 400px;
+	margin-top: 10px;
+	background: #FA821A;
+	border: none;
+	color: white
+}
+input {
+	width: 400px;
+	height: 40px
+}

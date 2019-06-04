@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="parent">
+		<h3> Регистрация </h3>
+		<p>
+			Пожалуйстра заполните форму регистрации.
+		</p>
+		<div class="box">
+		<input type="text" placeholder = " Введите имя" class="inp1">
+		</div>
+		<div class="box">		<input type="" placeholder ="Введите фамилию" class="inp2">
+		</div>
+		<div class="box">
+		<input type="" placeholder =" Введите отчество" class="inp3">
+		</div>
+		<div class="box">
+		<input type="" placeholder =" Введите логин" class="inp4">
+		</div>
+		<div class="box">
+		<input type="" placeholder =" E-mail" class="inp5">
+		</div>
+
+		<button> Зарегистрироваться </button>
+	</div>
+<script type="text/javascript">
+	let inp1 = document.querySelector('.inp1')
+	let inp2 = document.querySelector('.inp2')
+	let inp3 = document.querySelector('.inp3')
+	let inp4 = document.querySelector('.inp4')
+	let inp5 = document.querySelector('.inp5')
+	let btn = document.querySelector('button')
+	let box = document.querySelector('.box')
+	let main = document.querySelector('.parent')
+
+	btn.onclick = function(){
+		let check = false
+		if (inp1.value.length >= 1 && inp4.value.length >= 1 && inp5.value.length >= 1 ) {
+			check = true	
+		}
+		if (check == true) {
+			main.style.display = 'none'
+			let div = document.createElement('div')
+			document.body.appendChild(div)
+			div.innerHTML = 'Welcome, ' + inp1.value + ' ' + inp2.value + ' ' + inp3.value + ' ! '
+			
+		}
+		else {
+			alert('Заполните форму.')
+		}
+	}
+</script>
+</body>
+</html>
